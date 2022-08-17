@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the SmBaseChartWidget class from the sm_base_chart_widget library, for the Dart programming language.">
+  <title>SmBaseChartWidget class - sm_base_chart_widget library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">sm_ui</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/UI_widgets_sm_chart_sm_base_chart_widget-library.html">sm_base_chart_widget</a></li>
+    <li class="self-crumb">SmBaseChartWidget abstract class</li>
+  </ol>
+  <div class="self-name">SmBaseChartWidget</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">SmBaseChartWidget</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></li>
+        <li><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree-class.html">DiagnosticableTree</a></li>
+        <li><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></li>
+        <li><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html">StatefulWidget</a></li>
+      <li>SmBaseChartWidget</li>
+    </ul>
+  </dd>
+
+        
+        
+
+        <dt>Implementers</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="../UI_widgets_sm_chart_sm_chart_widget/SmChartWidget-class.html">SmChartWidget</a></li>
+        </ul></dd>
+
+        <dt>Available Extensions</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="https://pub.dev/documentation/get/4.6.5/get_utils_src_extensions_widget_extensions/WidgetMarginX.html">WidgetMarginX</a></li>
+          <li><a href="https://pub.dev/documentation/get/4.6.5/get_utils_src_extensions_widget_extensions/WidgetPaddingX.html">WidgetPaddingX</a></li>
+          <li><a href="https://pub.dev/documentation/get/4.6.5/get_utils_src_extensions_widget_extensions/WidgetSliverBoxX.html">WidgetSliverBoxX</a></li>
+        </ul></dd>
+
+        
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="SmBaseChartWidget" class="callable">
+          <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/SmBaseChartWidget.html">SmBaseChartWidget</a></span><span class="signature">(<span class="parameter" id="-param-smChartStyle">{<span class="type-annotation"><a href="../UI_widgets_sm_chart_theme_sm_chart_style/SmChartStyle-class.html">SmChartStyle</a>?</span> <span class="parameter-name">smChartStyle</span>, </span><span class="parameter" id="-param-title"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">title</span>, </span><span class="parameter" id="-param-enableOption"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enableOption</span>, </span><span class="parameter" id="-param-cancel"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">cancel</span>, </span><span class="parameter" id="-param-save"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">save</span>, </span><span class="parameter" id="-param-enableIntervalBar"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enableIntervalBar</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-isExpandedEnabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">isExpandedEnabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-actionList"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>&gt;</span>?</span> <span class="parameter-name">actionList</span> = <span class="default-value">const []</span>, </span><span class="parameter" id="-param-fullScreenWidget"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">fullScreenWidget</span>, </span><span class="parameter" id="-param-primaryXAxis"><span class="type-annotation"><a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/ChartAxis-class.html">ChartAxis</a>?</span> <span class="parameter-name">primaryXAxis</span>, </span><span class="parameter" id="-param-emptyDataMessage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">emptyDataMessage</span>, </span><span class="parameter" id="-param-dateFormat"><span class="type-annotation"><a href="https://pub.dev/documentation/intl/0.17.0/intl/DateFormat-class.html">DateFormat</a>?</span> <span class="parameter-name">dateFormat</span>, </span><span class="parameter" id="-param-onTranslate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">onTranslate</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span></span>)?}</span>)</span>
+        </dt>
+        <dd>
+          
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="actionList" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/actionList.html">actionList</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>&gt;</span>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="cancel" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/cancel.html">cancel</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="chartAxisType" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/chartAxisType.html">chartAxisType</a></span>
+  <span class="signature">&#8596; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/ChartAxis-class.html">ChartAxis</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="compareChartMap" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/compareChartMap.html">compareChartMap</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter">dynamic</span>, <span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_collection_model/SmChartCollectionModel-class.html">SmChartCollectionModel</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  map key:seriesName , value <code>SmChartCollectionModel</code>
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="customChart" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/customChart.html">customChart</a></span>
+  <span class="signature">&#8596; <a href="../UI_widgets_sm_chart_sm_custom_chart/SmCustomChart-class.html">SmCustomChart</a></span> 
+
+</dt>
+<dd>
+  legacy code
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="dateFormat" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/dateFormat.html">dateFormat</a></span>
+  <span class="signature">&#8596; <a href="https://pub.dev/documentation/intl/0.17.0/intl/DateFormat-class.html">DateFormat</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="emptyDataMessage" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/emptyDataMessage.html">emptyDataMessage</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="enableIntervalBar" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/enableIntervalBar.html">enableIntervalBar</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  showing bottom sheet to handle sm_setting on sm_chart to select what type to apply <code>ChartType</code> <code>line,OHLC,CandleStick</code>
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="enableOption" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/enableOption.html">enableOption</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  showns <code>compare and Indicators</code> widget
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="fullScreenWidget" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/fullScreenWidget.html">fullScreenWidget</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span> 
+
+</dt>
+<dd>
+  widget shown when press full screen icon
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features">@<a href="https://pub.dev/documentation/meta/1.7.0/meta/nonVirtual-constant.html">nonVirtual</a>, read-only, inherited</div>
+
+</dd>
+
+        <dt id="isExpandedEnabled" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/isExpandedEnabled.html">isExpandedEnabled</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  wheather the chart shown in expanded view
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="key" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> 
+
+</dt>
+<dd class="inherited">
+  Controls how one widget replaces another widget in the tree.
+  <div class="features">final, inherited</div>
+
+</dd>
+
+        <dt id="mainChartCollection" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/mainChartCollection.html">mainChartCollection</a></span>
+  <span class="signature">&#8596; <a href="../models_sm_chart_models_sm_chart_collection_model/SmChartCollectionModel-class.html">SmChartCollectionModel</a></span> 
+
+</dt>
+<dd>
+  initial configs of chart
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="onTranslate" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/onTranslate.html">onTranslate</a></span>
+  <span class="signature">&#8596; (<a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a> Function?<span class="signature">(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span></span>)</span>?)</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="primaryXAxis" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/primaryXAxis.html">primaryXAxis</a></span>
+  <span class="signature">&#8596; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/ChartAxis-class.html">ChartAxis</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="save" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/save.html">save</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="smChartStyle" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/smChartStyle.html">smChartStyle</a></span>
+  <span class="signature">&#8596; <a href="../UI_widgets_sm_chart_theme_sm_chart_style/SmChartStyle-class.html">SmChartStyle</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="textStyle" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/textStyle.html">textStyle</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/painting/TextStyle-class.html">TextStyle</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="title" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/title.html">title</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="buildActionWidget" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/buildActionWidget.html">buildActionWidget</a></span><span class="signature">(<wbr><span class="parameter" id="buildActionWidget-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span>, </span><span class="parameter" id="buildActionWidget-param-onSelect"><span class="type-annotation">void</span> <span class="parameter-name">onSelect</span>(<span class="parameter" id="param-val">{<span class="type-annotation">dynamic</span> <span class="parameter-name">val</span>}</span>)</span>)
+    <span class="returntype parameter">&#8594; <a href="../UI_widgets_forms_sm_confirmation_widget/SmConfirmationWidget-class.html">SmConfirmationWidget</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  to build compare actions from app
+  
+
+</dd>
+
+        <dt id="buildCompareWidgets" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/buildCompareWidgets.html">buildCompareWidgets</a></span><span class="signature">(<wbr><span class="parameter" id="buildCompareWidgets-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span>, </span><span class="parameter" id="buildCompareWidgets-param-setState"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Function-class.html">Function</a></span> <span class="parameter-name">setState</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  to build compaer widget from app
+Example
+  
+
+</dd>
+
+        <dt id="buildInterverWidget" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/buildInterverWidget.html">buildInterverWidget</a></span><span class="signature">(<wbr><span class="parameter" id="buildInterverWidget-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  to build interval widgte based on app busniess
+  
+
+</dd>
+
+        <dt id="createElement" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html">createElement</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/widgets/StatefulElement-class.html">StatefulElement</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Creates a <a href="https://api.flutter.dev/flutter/widgets/StatefulElement-class.html">StatefulElement</a> to manage this widget's location in the tree.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="createState" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/createState.html">createState</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidgetState-class.html">SmBaseChartWidgetState</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates the mutable state for this widget at a given location in the tree.
+  <div class="features">override</div>
+
+</dd>
+
+        <dt id="dataSourceMapper" class="callable">
+  <span class="name deprecated"><a class="deprecated" href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/dataSourceMapper.html">dataSourceMapper</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  this mapper <a class="deprecated" href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/dataSourceMapper.html">dataSourceMapper</a> to handle outside data  for datasource based on where you used
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;unused&#39;)</div>
+
+</dd>
+
+        <dt id="debugDescribeChildren" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a list of <code>DiagnosticsNode</code> objects describing this node's
+children.
+  <div class="features">@<a href="https://pub.dev/documentation/meta/1.7.0/meta/protected-constant.html">protected</a>, inherited</div>
+
+</dd>
+
+        <dt id="debugFillProperties" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/debugFillProperties.html">debugFillProperties</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillProperties-param-properties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticPropertiesBuilder-class.html">DiagnosticPropertiesBuilder</a></span> <span class="parameter-name">properties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Add additional properties associated with the node.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="loadDataSource" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/loadDataSource.html">loadDataSource</a></span><span class="signature">(<wbr><span class="parameter" id="loadDataSource-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  must call <a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/rebuild.html">rebuild</a>
+  
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="onComparing" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/onComparing.html">onComparing</a></span><span class="signature">(<wbr><span class="parameter" id="onComparing-param-value"><span class="type-annotation">dynamic</span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <code class="language-@override">onComparing(x) {
+  var random = Random().nextInt(50) + 50;
+  compareChartMap[x] = SmChartCollectionModel(
+      chartSeriesName: x,
+      dataSource: List.generate(
+          100,
+          (index) =&gt; SmChartDataModel(
+              closeValue: index,
+              highValue: index * Random().nextInt(30) + 1,
+              lowValue: index / random,
+              openValue: index + Random().nextInt(30) + 1,
+              volume: index,
+              xValue: DateTime.now().subtract(Duration(days: index)))));
+}```
+</code>
+  
+
+</dd>
+
+        <dt id="onIntervalTap" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/onIntervalTap.html">onIntervalTap</a></span><span class="signature">(<wbr><span class="parameter" id="onIntervalTap-param-value"><span class="type-annotation">dynamic</span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="onRemoveCompare" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/onRemoveCompare.html">onRemoveCompare</a></span><span class="signature">(<wbr><span class="parameter" id="onRemoveCompare-param-value"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">value</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Example <code>@override onRemoveCompare(String? value) {   compareChartMap.remove(value); }</code>
+  
+
+</dd>
+
+        <dt id="rebuild" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/rebuild.html">rebuild</a></span><span class="signature">(<wbr><span class="parameter" id="rebuild-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  method builds chart and update datasource
+called from <a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/loadDataSource.html">loadDataSource</a>
+  
+
+</dd>
+
+        <dt id="toDiagnosticsNode" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr><span class="parameter" id="toDiagnosticsNode-param-name">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">name</span>, </span><span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticsTreeStyle.html">DiagnosticsTreeStyle</a>?</span> <span class="parameter-name">style</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a debug representation of the object that is used by debugging
+tools and by <a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsNode.toStringDeep</a>.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></span><span class="signature">(<wbr><span class="parameter" id="toString-param-minLevel">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticLevel.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span> = <span class="default-value">DiagnosticLevel.info</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toStringDeep" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr><span class="parameter" id="toStringDeep-param-prefixLineOne">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixLineOne</span> = <span class="default-value">&#39;&#39;</span>, </span><span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">prefixOtherLines</span>, </span><span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticLevel.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span> = <span class="default-value">DiagnosticLevel.debug</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a string representation of this node and its descendants.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toStringShallow" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr><span class="parameter" id="toStringShallow-param-joiner">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">joiner</span> = <span class="default-value">&#39;, &#39;</span>, </span><span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticLevel.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span> = <span class="default-value">DiagnosticLevel.debug</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a one-line detailed description of the object.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toStringShort" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A short, textual description of this widget.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features">@<a href="https://pub.dev/documentation/meta/1.7.0/meta/nonVirtual-constant.html">nonVirtual</a>, inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">sm_ui</a></li>
+  <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/UI_widgets_sm_chart_sm_base_chart_widget-library.html">sm_base_chart_widget</a></li>
+  <li class="self-crumb">SmBaseChartWidget abstract class</li>
+</ol>
+
+
+    <h5>sm_base_chart_widget library</h5>
+    <ol>
+  <li class="section-title"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/UI_widgets_sm_chart_sm_base_chart_widget-library.html#classes">Classes</a></li>
+  <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget-class.html">SmBaseChartWidget</a></li>
+  <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidgetState-class.html">SmBaseChartWidgetState</a></li>
+
+
+
+
+
+
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget-class.html#constructors">Constructors</a></li>
+          <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/SmBaseChartWidget.html">SmBaseChartWidget</a></li>
+
+
+    <li class="section-title">
+      <a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/actionList.html">actionList</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/cancel.html">cancel</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/chartAxisType.html">chartAxisType</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/compareChartMap.html">compareChartMap</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/customChart.html">customChart</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/dateFormat.html">dateFormat</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/emptyDataMessage.html">emptyDataMessage</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/enableIntervalBar.html">enableIntervalBar</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/enableOption.html">enableOption</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/fullScreenWidget.html">fullScreenWidget</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/isExpandedEnabled.html">isExpandedEnabled</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/mainChartCollection.html">mainChartCollection</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/onTranslate.html">onTranslate</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/primaryXAxis.html">primaryXAxis</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/save.html">save</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/smChartStyle.html">smChartStyle</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/textStyle.html">textStyle</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/title.html">title</a></li>
+
+    <li class="section-title"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget-class.html#instance-methods">Methods</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/buildActionWidget.html">buildActionWidget</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/buildCompareWidgets.html">buildCompareWidgets</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/buildInterverWidget.html">buildInterverWidget</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html">createElement</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/createState.html">createState</a></li>
+    <li><a class="deprecated" href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/dataSourceMapper.html">dataSourceMapper</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/loadDataSource.html">loadDataSource</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/onComparing.html">onComparing</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/onIntervalTap.html">onIntervalTap</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/onRemoveCompare.html">onRemoveCompare</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget/rebuild.html">rebuild</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html">toStringShort</a></li>
+
+    <li class="section-title inherited"><a href="../UI_widgets_sm_chart_sm_base_chart_widget/SmBaseChartWidget-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    sm_ui
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

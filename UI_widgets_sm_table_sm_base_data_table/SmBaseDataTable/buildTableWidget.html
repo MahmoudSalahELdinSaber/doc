@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the buildTableWidget method from the SmBaseDataTable class, for the Dart programming language.">
+  <title>buildTableWidget method - SmBaseDataTable class - sm_base_data_table library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">sm_ui</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/UI_widgets_sm_table_sm_base_data_table-library.html">sm_base_data_table</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable-class.html">SmBaseDataTable</a></li>
+    <li class="self-crumb">buildTableWidget method</li>
+  </ol>
+  <div class="self-name">buildTableWidget</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">buildTableWidget</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>
+<span class="name ">buildTableWidget</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="buildTableWidget-param-isFull">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isFull</span> = <span class="default-value">false</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Widget buildTableWidget({bool isFull = false}) {
+  var availableHeight = MediaQuery.of(context).size.height -
+      AppBar().preferredSize.height -
+      MediaQuery.of(context).padding.top -
+      MediaQuery.of(context).padding.bottom -
+      30;
+  if (tableStyle.enablePager &amp;&amp;
+      myDataSource.dataGridRows.length &gt; _defaultRowsCount) {
+    return StatefulBuilder(builder: (context, innerState) {
+      return OrientationBuilder(builder: (context, orientation) {
+        return Column(
+          children: [
+            if (topContent != null) topContent ?? SizedBox.shrink(),
+            MediaQuery(
+              data: MediaQuery.of(context).removePadding(removeBottom: true),
+              child: SizedBox(
+                  height: orientation == Orientation.landscape
+                      ? 300
+                      : isFull &amp;&amp; orientation == Orientation.portrait
+                          ? availableHeight - 53
+                          : getTableHeight(_defaultRowsCount),
+                  child: SfDataGridTheme(
+                    data: SfDataGridThemeData(
+                        sortIconColor: tableStyle.sortIconColor ??
+                            uiTheme.onsurfaceColor,
+                        headerColor:
+                            tableStyle.headerColor ?? uiTheme.surfaceColor),
+                    child: SfDataGrid(
+                      controller: controller,
+                      stackedHeaderRows: stackedHeaderRows,
+                      allowColumnsResizing: tableStyle.allowColumnsResizing,
+                      onColumnResizeUpdate: (x) =&gt;
+                          onResizingColumns(x, innerState),
+                      rowsPerPage: tableStyle.rowsPerPage,
+                      columnResizeMode: ColumnResizeMode.onResize,
+                      verticalScrollPhysics: isFull
+                          ? tableStyle.style.verticalScrollPhysics ??
+                              ScrollPhysics()
+                          : ScrollPhysics(),
+                      horizontalScrollPhysics: ClampingScrollPhysics(),
+                      rowHeight: tableStyle.rowHeight,
+                      headerRowHeight: tableStyle.headerRowHeight,
+                      isScrollbarAlwaysShown:
+                          tableStyle.style.isScrollbarAlwaysShown,
+                      gridLinesVisibility:
+                          tableStyle.style.gridLinesVisibility,
+                      source: myDataSource,
+                      footerFrozenRowsCount:
+                          tableStyle.style.footerFrozenRowsCount,
+                      headerGridLinesVisibility: GridLinesVisibility.both,
+                      frozenRowsCount: tableStyle.style.frozenRowsCount,
+                      frozenColumnsCount: tableStyle.style.frozenColumnsCount,
+                      columnWidthMode: tableStyle.columnWidthMode,
+                      columnWidthCalculationRange:
+                          ColumnWidthCalculationRange.allRows,
+                      columns: gridColumns,
+                      allowSorting: true,
+                      showSortNumbers: false,
+                      onCellTap: (details) =&gt; onRowTap(
+                          details.rowColumnIndex.rowIndex,
+                          details.rowColumnIndex.columnIndex),
+                    ),
+                  )),
+            ),
+            myDataSource.dataGridRows == null ||
+                    myDataSource.dataGridRows.isEmpty
+                ? Container(
+                    alignment: Alignment.center,
+                    height: 70,
+                    child: Text(
+                      tableStyle.noDataFoundText,
+                      style: textColor1Text_16.textStyle,
+                    ),
+                  )
+                : Container(),
+            if (bottomContent != null) bottomContent ?? SizedBox.shrink(),
+          ],
+        );
+      });
+    });
+  }
+  return OrientationBuilder(builder: (context, orientation) {
+    return Column(
+      children: [
+        if (topContent != null) topContent ?? SizedBox.shrink(),
+        MediaQuery(
+          data: MediaQuery.of(context).removePadding(removeBottom: true),
+          child: StatefulBuilder(builder: (context, setState) {
+            myDataSource.setSate = setState;
+            return SizedBox(
+                height: orientation == Orientation.landscape
+                    ? 300
+                    : isFull &amp;&amp; orientation == Orientation.portrait
+                        ? availableHeight - 50
+                        : getTableHeight(0),
+
+                &#47;&#47;  (myDataSource.dataGridRows.length *
+                &#47;&#47;         tableStyle.rowHeight) +
+                &#47;&#47;     tableStyle.headerRowHeight,
+                child: StatefulBuilder(
+                  builder: (context, innerState) {
+                    return Padding(
+                      padding: tableStyle.style.padding,
+                      child: SfDataGridTheme(
+                        data: SfDataGridThemeData(
+                            sortIconColor: tableStyle.sortIconColor ??
+                                uiTheme.onsurfaceColor,
+                            headerColor: tableStyle.headerColor ??
+                                uiTheme.surfaceColor),
+                        child: SfDataGrid(
+                          controller: controller,
+                          allowColumnsResizing:
+                              tableStyle.allowColumnsResizing,
+                          columnResizeMode: ColumnResizeMode.onResize,
+                          stackedHeaderRows: stackedHeaderRows,
+                          verticalScrollPhysics: isFull
+                              ? tableStyle.style.verticalScrollPhysics ??
+                                  ScrollPhysics()
+                              : ScrollPhysics(),
+                          rowHeight: tableStyle.rowHeight,
+                          headerRowHeight: tableStyle.headerRowHeight,
+                          onColumnResizeUpdate: (x) =&gt;
+                              onResizingColumns(x, innerState),
+                          isScrollbarAlwaysShown:
+                              tableStyle.style.isScrollbarAlwaysShown,
+                          gridLinesVisibility:
+                              tableStyle.style.gridLinesVisibility,
+                          frozenRowsCount: tableStyle.style.frozenRowsCount,
+                          source: myDataSource,
+                          footerFrozenRowsCount:
+                              tableStyle.style.footerFrozenRowsCount,
+                          headerGridLinesVisibility: GridLinesVisibility.both,
+                          frozenColumnsCount:
+                              tableStyle.style.frozenColumnsCount,
+                          columnWidthMode: tableStyle.columnWidthMode,
+                          columnWidthCalculationRange:
+                              ColumnWidthCalculationRange.allRows,
+                          columns: gridColumns,
+                          allowSorting: true,
+                          showSortNumbers: false,
+                          onCellTap: (details) =&gt; onRowTap(
+                              details.rowColumnIndex.rowIndex,
+                              details.rowColumnIndex.columnIndex),
+                        ),
+                      ),
+                    );
+                  },
+                ));
+          }),
+        ),
+        myDataSource.dataGridRows == null || myDataSource.dataGridRows.isEmpty
+            ? Container(
+                alignment: Alignment.center,
+                height: 70,
+                child: Text(
+                  tableStyle.noDataFoundText,
+                  style: textColor1Text_16.textStyle,
+                ),
+              )
+            : Container(),
+        if (tableStyle.hasLoadMore &amp;&amp; isFullScreen)
+          SizedBox(
+            key: Key(&quot;loadMoreButton&quot;),
+            child: SmSubmitButton(
+                title: onTranslate(tableStyle.loadMoreText),
+                onPressed: () {
+                  onLoadMorePressed();
+                }),
+          ),
+        if (bottomContent != null) bottomContent ?? SizedBox.shrink(),
+      ],
+    );
+  });
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">sm_ui</a></li>
+  <li><a href="../../UI_widgets_sm_table_sm_base_data_table/UI_widgets_sm_table_sm_base_data_table-library.html">sm_base_data_table</a></li>
+  <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable-class.html">SmBaseDataTable</a></li>
+  <li class="self-crumb">buildTableWidget method</li>
+</ol>
+
+
+    <h5>SmBaseDataTable class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable-class.html#constructors">Constructors</a></li>
+          <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/SmBaseDataTable.html">SmBaseDataTable</a></li>
+
+
+    <li class="section-title">
+      <a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/actions.html">actions</a></li>
+    <li><a class="deprecated" href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/availableRowsPerPage.html">availableRowsPerPage</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/bottomContent.html">bottomContent</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/columns.html">columns</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/context.html">context</a></li>
+    <li><a class="deprecated" href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/controller.html">controller</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/gridColumns.html">gridColumns</a></li>
+    <li><a class="deprecated" href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/gridRows.html">gridRows</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/header.html">header</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/isDataProvided.html">isDataProvided</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/isFullScreen.html">isFullScreen</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/myDataSource.html">myDataSource</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/newCount.html">newCount</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/onTranslate.html">onTranslate</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li class="inherited"><a href="../../UI_base_sm_base_statless_widget/SmBaseStatlessWidget/sizeConfig.html">sizeConfig</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/stackedHeaderRows.html">stackedHeaderRows</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/tableName.html">tableName</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/tableStyle.html">tableStyle</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/topContent.html">topContent</a></li>
+    <li class="inherited"><a href="../../UI_base_sm_base_statless_widget/SmBaseStatlessWidget/uiTheme.html">uiTheme</a></li>
+
+    <li class="section-title"><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable-class.html#instance-methods">Methods</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/build.html">build</a></li>
+    <li class="inherited"><a href="../../UI_base_sm_base_statless_widget/SmBaseStatlessWidget/buildAndroidWidget.html">buildAndroidWidget</a></li>
+    <li class="inherited"><a href="../../UI_base_sm_base_statless_widget/SmBaseStatlessWidget/buildByPlatform.html">buildByPlatform</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/buildColumn.html">buildColumn</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/buildExpandedTable.html">buildExpandedTable</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/buildGridColumns.html">buildGridColumns</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/buildGridRows.html">buildGridRows</a></li>
+    <li class="inherited"><a href="../../UI_base_sm_base_statless_widget/SmBaseStatlessWidget/buildIOSWidget.html">buildIOSWidget</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/buildTable.html">buildTable</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/buildTableWidget.html">buildTableWidget</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/buildThemeDataWidget.html">buildThemeDataWidget</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/StatelessWidget/createElement.html">createElement</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/getColumnIndex.html">getColumnIndex</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/getFilterBy.html">getFilterBy</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/getFilterWidget.html">getFilterWidget</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/getTableHeight.html">getTableHeight</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/init.html">init</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/initGridColumns.html">initGridColumns</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/isTableColumnsItemsExist.html">isTableColumnsItemsExist</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/loadDataSource.html">loadDataSource</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/onColumnResizeUpdate.html">onColumnResizeUpdate</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/onLoadMorePressed.html">onLoadMorePressed</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/onResizingColumns.html">onResizingColumns</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/onRowTap.html">onRowTap</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/onTapSetting.html">onTapSetting</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/prepareSortedColumns.html">prepareSortedColumns</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/rebuild.html">rebuild</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/refreshDataSource.html">refreshDataSource</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/reInitCubit.html">reInitCubit</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/setStackedHeaderRow.html">setStackedHeaderRow</a></li>
+    <li><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable/showFilterBottomSheet.html">showFilterBottomSheet</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html">toStringShort</a></li>
+
+    <li class="section-title inherited"><a href="../../UI_widgets_sm_table_sm_base_data_table/SmBaseDataTable-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    sm_ui
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

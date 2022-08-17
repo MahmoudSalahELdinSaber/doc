@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the SmPhoneField constructor from Class SmPhoneField from the sm_phone_field library, for the Dart programming language.">
+  <title>SmPhoneField constructor - SmPhoneField - sm_phone_field library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">sm_ui</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/UI_widgets_forms_sm_phone_field_sm_phone_field-library.html">sm_phone_field</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField-class.html">SmPhoneField<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></a></li>
+    <li class="self-crumb">SmPhoneField constructor</li>
+  </ol>
+  <div class="self-name">SmPhoneField</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-constructor">SmPhoneField&lt;<wbr><span class="type-parameter">T</span>&gt;</span> constructor 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      <span class="name ">SmPhoneField&lt;<wbr><span class="type-parameter">T</span>&gt;</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-context">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span>, </span></li>
+<li><span class="parameter" id="-param-title"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">title</span>, </span></li>
+<li><span class="parameter" id="-param-fieldWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">fieldWidth</span>, </span></li>
+<li><span class="parameter" id="-param-enable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="-param-labelText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">labelText</span>, </span></li>
+<li><span class="parameter" id="-param-hintNumber"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">hintNumber</span>, </span></li>
+<li><span class="parameter" id="-param-labelStyle"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">labelStyle</span>, </span></li>
+<li><span class="parameter" id="-param-labelColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">labelColor</span>, </span></li>
+<li><span class="parameter" id="-param-inputDecoration"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/material/InputDecoration-class.html">InputDecoration</a>?</span> <span class="parameter-name">inputDecoration</span>, </span></li>
+<li><span class="parameter" id="-param-initialValue"><span class="type-annotation">T?</span> <span class="parameter-name">initialValue</span>, </span></li>
+<li><span class="parameter" id="-param-items"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../models_DropDownModel/DropdownModel-class.html">DropdownModel</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span>?</span> <span class="parameter-name">items</span>, </span></li>
+<li><span class="parameter" id="-param-autoValidate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/AutovalidateMode.html">AutovalidateMode</a></span> <span class="parameter-name">autoValidate</span> = <span class="default-value">AutovalidateMode.disabled</span>, </span></li>
+<li><span class="parameter" id="-param-onSaved"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/FormFieldSetter.html">FormFieldSetter</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">onSaved</span>, </span></li>
+<li><span class="parameter" id="-param-onChanged"><span class="type-annotation">dynamic</span> <span class="parameter-name">onChanged</span>(<ol class="parameter-list"><li><span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span></span></li>
+</ol>
+)?, </span></li>
+<li><span class="parameter" id="-param-textFieldValidator"><span class="type-annotation">dynamic</span> <span class="parameter-name">textFieldValidator</span>(<ol class="parameter-list"><li><span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span></span></li>
+</ol>
+)?, </span></li>
+<li><span class="parameter" id="-param-validator"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/FormFieldValidator.html">FormFieldValidator</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">validator</span>, </span></li>
+<li><span class="parameter" id="-param-hintText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">hintText</span>, </span></li>
+<li><span class="parameter" id="-param-borderColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">borderColor</span>, </span></li>
+<li><span class="parameter" id="-param-dropdownInputFormFieldStyle"><span class="type-annotation">dynamic</span> <span class="parameter-name">dropdownInputFormFieldStyle</span>, </span></li>
+<li><span class="parameter" id="-param-dropDownValue"><span class="type-annotation">dynamic</span> <span class="parameter-name">dropDownValue</span> = <span class="default-value">&#39;&#39;</span>, </span></li>
+<li><span class="parameter" id="-param-errorBorderColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">errorBorderColor</span>, </span></li>
+<li><span class="parameter" id="-param-disabledColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">disabledColor</span>, </span></li>
+<li><span class="parameter" id="-param-controller"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/TextEditingController-class.html">TextEditingController</a>?</span> <span class="parameter-name">controller</span>, </span></li>
+<li><span class="parameter" id="-param-onItemSelected"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">onItemSelected</span>, </span></li>
+<li><span class="parameter" id="-param-hintStyle"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">hintStyle</span>, </span></li>
+<li><span class="parameter" id="-param-contentPadding"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a>?</span> <span class="parameter-name">contentPadding</span>, </span></li>
+<li><span class="parameter" id="-param-textFieldInitialValue"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">textFieldInitialValue</span>, </span></li>
+<li><span class="parameter" id="-param-textFieldController"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/TextEditingController-class.html">TextEditingController</a>?</span> <span class="parameter-name">textFieldController</span>, </span></li>
+<li><span class="parameter" id="-param-inputFormatters"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/services/TextInputFormatter-class.html">TextInputFormatter</a></span>&gt;</span>?</span> <span class="parameter-name">inputFormatters</span>, </span></li>
+<li><span class="parameter" id="-param-textInputAction"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/services/TextInputAction.html">TextInputAction</a>?</span> <span class="parameter-name">textInputAction</span>, </span></li>
+<li><span class="parameter" id="-param-textFieldSaved"><span class="type-annotation">dynamic</span> <span class="parameter-name">textFieldSaved</span>(<ol class="parameter-list"><li><span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span></span></li>
+</ol>
+)?, </span></li>
+<li><span class="parameter" id="-param-showVerticalLine"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">showVerticalLine</span> = <span class="default-value">false</span>, </span></li>
+<li><span class="parameter" id="-param-key"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>}</span></li>
+</ol>)
+    </section>
+
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">SmPhoneField({
+  required this.context,
+  this.title,
+  this.fieldWidth,
+  this.enable = true,
+  this.labelText,
+  this.hintNumber,
+  this.labelStyle,
+  this.labelColor,
+  this.inputDecoration,
+  this.initialValue,
+  this.items,
+  this.autoValidate = AutovalidateMode.disabled,
+  this.onSaved,
+  this.onChanged,
+  this.textFieldValidator,
+  this.validator,
+  this.hintText,
+  this.borderColor,
+  dropdownInputFormFieldStyle,
+  this.dropDownValue = &#39;&#39;,
+  this.errorBorderColor,
+  this.disabledColor,
+  this.controller,
+  this.onItemSelected,
+  this.hintStyle,
+  this.contentPadding,
+  this.textFieldInitialValue,
+  this.textFieldController,
+  this.inputFormatters,
+  this.textInputAction,
+  this.textFieldSaved,
+  this.showVerticalLine = false,
+  Key? key,
+})  : this.dropdownInputFormFieldStyle =
+          dropdownInputFormFieldStyle ?? DropdownInputFormFieldStyle(),
+      super(key: key);</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">sm_ui</a></li>
+  <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/UI_widgets_forms_sm_phone_field_sm_phone_field-library.html">sm_phone_field</a></li>
+  <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField-class.html">SmPhoneField<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></a></li>
+  <li class="self-crumb">SmPhoneField constructor</li>
+</ol>
+
+
+    <h5>SmPhoneField class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField-class.html#constructors">Constructors</a></li>
+          <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/SmPhoneField.html">SmPhoneField</a></li>
+
+
+    <li class="section-title">
+      <a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/autoValidate.html">autoValidate</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/borderColor.html">borderColor</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/contentPadding.html">contentPadding</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/context.html">context</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/controller.html">controller</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/disabledColor.html">disabledColor</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/dropdownInputFormFieldStyle.html">dropdownInputFormFieldStyle</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/dropDownValue.html">dropDownValue</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/enable.html">enable</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/errorBorderColor.html">errorBorderColor</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/fieldWidth.html">fieldWidth</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/hintNumber.html">hintNumber</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/hintStyle.html">hintStyle</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/hintText.html">hintText</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/initialValue.html">initialValue</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/inputDecoration.html">inputDecoration</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/inputFormatters.html">inputFormatters</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/items.html">items</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/labelColor.html">labelColor</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/labelStyle.html">labelStyle</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/labelText.html">labelText</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/onChanged.html">onChanged</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/onItemSelected.html">onItemSelected</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/onSaved.html">onSaved</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/showVerticalLine.html">showVerticalLine</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/textFieldController.html">textFieldController</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/textFieldInitialValue.html">textFieldInitialValue</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/textFieldSaved.html">textFieldSaved</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/textFieldValidator.html">textFieldValidator</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/textInputAction.html">textInputAction</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/title.html">title</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/validator.html">validator</a></li>
+
+    <li class="section-title"><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html">createElement</a></li>
+    <li><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField/createState.html">createState</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html">toStringShort</a></li>
+
+    <li class="section-title inherited"><a href="../../UI_widgets_forms_sm_phone_field_sm_phone_field/SmPhoneField-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    sm_ui
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

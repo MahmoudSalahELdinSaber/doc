@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the showSMModalBottomSheet function from the sm_bottom_sheet_action library, for the Dart programming language.">
+  <title>showSMModalBottomSheet function - sm_bottom_sheet_action library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">sm_ui</a></li>
+    <li><a href="../UI_widgets_sm_bottom_sheet_sm_bottom_sheet_action/UI_widgets_sm_bottom_sheet_sm_bottom_sheet_action-library.html">sm_bottom_sheet_action</a></li>
+    <li class="self-crumb">showSMModalBottomSheet function</li>
+  </ol>
+  <div class="self-name">showSMModalBottomSheet</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-function">showSMModalBottomSheet</span> function 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    <section class="multi-line-signature">
+        
+
+<span class="returntype">dynamic</span>
+<span class="name ">showSMModalBottomSheet</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="showSMModalBottomSheet-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-title">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">title</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-titleWithIcon"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">titleWithIcon</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-close"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/IconData-class.html">IconData</a>?</span> <span class="parameter-name">close</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-onClose"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Function-class.html">Function</a>?</span> <span class="parameter-name">onClose</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-closeIconColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">closeIconColor</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-titleColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">titleColor</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-content"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">content</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-buttonSection"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">buttonSection</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-hasScrolling"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">hasScrolling</span> = <span class="default-value">false</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-isScrollControlled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isScrollControlled</span> = <span class="default-value">false</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-isDismissible"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">isDismissible</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-enableDrag"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableDrag</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-backgroundColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">backgroundColor</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-height"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">height</span>, </span></li>
+<li><span class="parameter" id="showSMModalBottomSheet-param-horizontalPadding"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">horizontalPadding</span>}</span></li>
+</ol>)
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Example</p>
+<pre class="language-dart"><code>showSMModalBottomSheet(context,
+       content: Text("data"),
+       buttonSection: SmSubmitButton(
+         child: Text("text"),
+         onPressed: () {},
+       ));
+        ```
+if [content] has scrolling  make shrinkWrap: true,   hasScrolling: true, and set height
+</code></pre>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">showSMModalBottomSheet(
+  BuildContext context, {
+  String? title,
+  String? titleWithIcon,
+  IconData? close,
+  Function? onClose,
+  Color? closeIconColor,
+  Color? titleColor,
+  required Widget content,
+  Widget? buttonSection,
+  bool hasScrolling = false,
+  bool isScrollControlled = false,
+  bool isDismissible = true,
+  bool enableDrag = true,
+  Color? backgroundColor,
+  double? height,
+  double? horizontalPadding,
+}) {
+  var sizeConfig = SizeConfig(context);
+  return showModalBottomSheet(
+      context: context,
+      isDismissible: isDismissible,
+      enableDrag: enableDrag,
+      isScrollControlled: isScrollControlled,
+      backgroundColor: backgroundColor ?? uiTheme.surfaceColor,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(25), topRight: Radius.circular(25)),
+      ),
+      builder: (context) {
+        return Padding(
+          padding: EdgeInsets.only(
+              left: horizontalPadding ?? horizontalSpace,
+              right: horizontalPadding ?? horizontalSpace,
+              bottom: MediaQuery.of(context).viewInsets.bottom),
+          child: Wrap(
+            children: [
+              Container(
+                alignment: Alignment.center,
+                margin: EdgeInsets.only(
+                    left: sizeConfig.blockSizeHorizontal * 25,
+                    right: sizeConfig.blockSizeHorizontal * 25,
+                    top: sizeConfig.blockSizeHorizontal * 2,
+                    bottom: sizeConfig.blockSizeHorizontal * 2),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Color(0xffe1e1e1), width: 2),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: verticalSpace),
+                child: title != null
+                    ? Text(
+                        title,
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: titleColor ?? uiTheme.primaryColor,
+                            letterSpacing: 2),
+                      )
+                    : Container(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            InkWell(
+                              onTap: () {
+                                if (onClose != null) onClose();
+                                Navigator.pop(context);
+                              },
+                              child: Icon(
+                                close ?? Icons.close,
+                                color: closeIconColor ?? uiTheme.onsurfaceColor,
+                              ),
+                            ),
+                            Text(
+                              titleWithIcon ?? &quot;&quot;,
+                              style: TextStyle(
+                                  color: uiTheme.onsurfaceColor,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: &quot;Cairo&quot;),
+                            ),
+                          ],
+                        ),
+                      ),
+              ),
+              hasScrolling
+                  ? Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                            height: height ?? sizeConfig.screenHeight! * 0.60,
+                            child: content),
+                        if (buttonSection != null) buttonSection,
+                      ],
+                    )
+                  : content,
+              hasScrolling ? Container() : buttonSection ?? SizedBox.shrink(),
+            ],
+          ),
+        );
+      });
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">sm_ui</a></li>
+  <li><a href="../UI_widgets_sm_bottom_sheet_sm_bottom_sheet_action/UI_widgets_sm_bottom_sheet_sm_bottom_sheet_action-library.html">sm_bottom_sheet_action</a></li>
+  <li class="self-crumb">showSMModalBottomSheet function</li>
+</ol>
+
+
+    <h5>sm_bottom_sheet_action library</h5>
+    <ol>
+
+
+
+
+
+  <li class="section-title"><a href="../UI_widgets_sm_bottom_sheet_sm_bottom_sheet_action/UI_widgets_sm_bottom_sheet_sm_bottom_sheet_action-library.html#functions">Functions</a></li>
+  <li><a href="../UI_widgets_sm_bottom_sheet_sm_bottom_sheet_action/showSMModalBottomSheet.html">showSMModalBottomSheet</a></li>
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    sm_ui
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

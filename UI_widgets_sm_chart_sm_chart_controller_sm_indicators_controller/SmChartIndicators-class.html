@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the SmChartIndicators class from the sm_indicators_controller library, for the Dart programming language.">
+  <title>SmChartIndicators class - sm_indicators_controller library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">sm_ui</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller-library.html">sm_indicators_controller</a></li>
+    <li class="self-crumb">SmChartIndicators class</li>
+  </ol>
+  <div class="self-name">SmChartIndicators</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">SmChartIndicators</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>singlton class to mange type and configs of indicator .</p>
+</section>
+
+
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="SmChartIndicators" class="callable">
+          <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/SmChartIndicators.html">SmChartIndicators</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="defaultIndicators" class="property">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/defaultIndicators.html">defaultIndicators</a></span>
+  <span class="signature">&#8596; <a href="../models_sm_chart_models_sm_indicators_model/SmIndicatorsList-class.html">SmIndicatorsList</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="createAccumulationDistributionIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createAccumulationDistributionIndicator.html">createAccumulationDistributionIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createAccumulationDistributionIndicator-param-data">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span></span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createAccumulationDistributionIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createAccumulationDistributionIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/AccumulationDistributionIndicator-class.html">AccumulationDistributionIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a>
+  
+
+</dd>
+
+        <dt id="createAtrIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createAtrIndicator.html">createAtrIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createAtrIndicator-param-data">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span>?</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createAtrIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createAtrIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/AtrIndicator-class.html">AtrIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a>
+  
+
+</dd>
+
+        <dt id="createBollingerBandIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createBollingerBandIndicator.html">createBollingerBandIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createBollingerBandIndicator-param-data">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span>?</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createBollingerBandIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createBollingerBandIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/BollingerBandIndicator-class.html">BollingerBandIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a>
+  
+
+</dd>
+
+        <dt id="createEmaIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createEmaIndicator.html">createEmaIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createEmaIndicator-param-data">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span>?</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createEmaIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createEmaIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/EmaIndicator-class.html">EmaIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a>
+  
+
+</dd>
+
+        <dt id="createMacdIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createMacdIndicator.html">createMacdIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createMacdIndicator-param-data">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span>?</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createMacdIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createMacdIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/MacdIndicator-class.html">MacdIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a>
+This is mostly using indicator having <code>shortPeriod</code> and <code>longPeriod</code> for defining the motion of the indicator.
+Also you can draw <code>Line</code>, Histogram MACD or Both types using the <code>macdType</code> property,
+The <code>macdLineColor</code> property is used to define the color for the MACD line and the <code>histogramNegativeColor</code> and <code>histogramPositiveColor</code>
+property is used to define the color for the MACD histogram.
+  
+
+</dd>
+
+        <dt id="createMomentumIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createMomentumIndicator.html">createMomentumIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createMomentumIndicator-param-data">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span>?</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createMomentumIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createMomentumIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/MomentumIndicator-class.html">MomentumIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a> and <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/LineSeries-class.html">LineSeries</a>
+  
+
+</dd>
+
+        <dt id="createRsiIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createRsiIndicator.html">createRsiIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createRsiIndicator-param-data">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span>?</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createRsiIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createRsiIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/RsiIndicator-class.html">RsiIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a>
+The RSI indicator has an additional two lines other than the signal line.They indicate the overBought and overSold region.
+The <code>upperLineColor</code> property is used to define the color for the line that indicates <code>overBought</code> region,
+and the <code>lowerLineColor</code> property is used to define the color for the line that indicates <code>overSold</code> region.
+  
+
+</dd>
+
+        <dt id="createSmaIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createSmaIndicator.html">createSmaIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createSmaIndicator-param-data">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span>?</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createSmaIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createSmaIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/SmaIndicator-class.html">SmaIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a>
+  
+
+</dd>
+
+        <dt id="createStochasticIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createStochasticIndicator.html">createStochasticIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createStochasticIndicator-param-data">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span>?</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createStochasticIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createStochasticIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/StochasticIndicator-class.html">StochasticIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a>
+This indicator is used to measure the range and momentum of price movements.
+It contains kPeriod and dPeriod property defining the ‘k’ percentage and ‘d’ percentage respectively.
+In this indicator upperLineColor,lowerLineColor
+and periodLineColor property are used to define the color for the Stochastic indicator lines.
+  
+
+</dd>
+
+        <dt id="createTmaIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createTmaIndicator.html">createTmaIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="createTmaIndicator-param-data">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span>?</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="createTmaIndicator-param-period"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">period</span> = <span class="default-value">5</span>, </span><span class="parameter" id="createTmaIndicator-param-indicatorColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">indicatorColor</span> = <span class="default-value">Colors.blue</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TmaIndicator-class.html">TmaIndicator</a> this indicator use with series named <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/HiloOpenCloseSeries-class.html">HiloOpenCloseSeries</a>
+A TMA indicator is simply a double-smoothed simple moving average of data calculated over
+a period where the middle portion of the data has more weight.
+  
+
+</dd>
+
+        <dt id="getIndicator" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/getIndicator.html">getIndicator</a></span><span class="signature">(<wbr><span class="parameter" id="getIndicator-param-indicatorType"><span class="type-annotation"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_type/SmIndicatorType.html">SmIndicatorType</a></span> <span class="parameter-name">indicatorType</span>, </span><span class="parameter" id="getIndicator-param-items"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_chart_data/SmChartDataModel-class.html">SmChartDataModel</a></span>&gt;</span></span> <span class="parameter-name">items</span>, </span><span class="parameter" id="getIndicator-param-color"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://pub.dev/documentation/syncfusion_flutter_charts/20.2.38/charts/TechnicalIndicators-class.html">TechnicalIndicators</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  gets indecator based on <a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_type/SmIndicatorType.html">SmIndicatorType</a>  given data <code>items</code>
+  
+
+</dd>
+
+        <dt id="getSelectedIndicators" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/getSelectedIndicators.html">getSelectedIndicators</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../models_sm_chart_models_sm_indicators_model/Indicator-class.html">Indicator</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  this for <a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/getSelectedIndicators.html">getSelectedIndicators</a> for get <code>selectedIndicators</code>
+  
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="reset" class="callable">
+  <span class="name"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/reset.html">reset</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  this <a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/reset.html">reset</a> for handle reset to old list of indicators
+  
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">sm_ui</a></li>
+  <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller-library.html">sm_indicators_controller</a></li>
+  <li class="self-crumb">SmChartIndicators class</li>
+</ol>
+
+
+    <h5>sm_indicators_controller library</h5>
+    <ol>
+  <li class="section-title"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller-library.html#classes">Classes</a></li>
+  <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators-class.html">SmChartIndicators</a></li>
+
+
+
+
+
+
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators-class.html#constructors">Constructors</a></li>
+          <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/SmChartIndicators.html">SmChartIndicators</a></li>
+
+
+    <li class="section-title">
+      <a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/defaultIndicators.html">defaultIndicators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators-class.html#instance-methods">Methods</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createAccumulationDistributionIndicator.html">createAccumulationDistributionIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createAtrIndicator.html">createAtrIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createBollingerBandIndicator.html">createBollingerBandIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createEmaIndicator.html">createEmaIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createMacdIndicator.html">createMacdIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createMomentumIndicator.html">createMomentumIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createRsiIndicator.html">createRsiIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createSmaIndicator.html">createSmaIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createStochasticIndicator.html">createStochasticIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/createTmaIndicator.html">createTmaIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/getIndicator.html">getIndicator</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/getSelectedIndicators.html">getSelectedIndicators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators/reset.html">reset</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../UI_widgets_sm_chart_sm_chart_controller_sm_indicators_controller/SmChartIndicators-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    sm_ui
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
